@@ -5,11 +5,9 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
 public final class IDCardUtil {
-    private IDCardUtil() {
-    }
 
-    static final char[] code = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'}; // 11个校验码字符
-    static final int[] factor = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1}; // 18个加权因子
+    private static final char[] code = {'1', '0', 'X', '9', '8', '7', '6', '5', '4', '3', '2'}; // 11个校验码字符
+    private static final int[] factor = {7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1}; // 18个加权因子
 
     /**
      * 修补15位居民身份证号码为18位，并校验15位身份证有效性
@@ -138,13 +136,6 @@ public final class IDCardUtil {
             return true;
         } else
             return false;
-    }
-
-    public static void main(String[] args) throws Throwable {
-        String idcard1 = "11010519491231002X";
-        String idcard2 = "440524188001010014";
-        System.out.println(IDCardUtil.getGenderFromPersonIDCode(idcard1));
-        System.out.println(IDCardUtil.isIdentity(idcard2));
     }
 
     /**

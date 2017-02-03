@@ -5,8 +5,6 @@ import java.text.DecimalFormat;
 import java.util.regex.Pattern;
 
 public final strictfp class MathUtil {
-    private MathUtil() {
-    }
 
     // 默认运算精度
     private static int DEF_SCALE = 10;
@@ -149,7 +147,4 @@ public final strictfp class MathUtil {
         return pattern.matcher(object.toString()).matches();
     }
 
-    public static final void main(String[] args) {
-        System.out.println(add(1.000001, 2.10));
-    }
 }
