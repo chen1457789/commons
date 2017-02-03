@@ -10,8 +10,8 @@ import java.io.*;
 /**
  * Created by chenjun on 2017/2/3.
  */
-public class FtpUtils {
-    private static final Logger logger = LoggerFactory.getLogger(FtpUtils.class);
+public class FtpUtil {
+    private static final Logger logger = LoggerFactory.getLogger(FtpUtil.class);
 
     /**
      * 连接ftp服务器

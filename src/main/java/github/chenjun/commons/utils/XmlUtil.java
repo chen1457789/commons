@@ -11,8 +11,8 @@ import java.util.*;
 /**
  * Created by chenjun on 2017/2/3.
  */
-public class XmlUtils {
-    private static final Logger logger = LoggerFactory.getLogger(XmlUtils.class);
+public class XmlUtil {
+    private static final Logger logger = LoggerFactory.getLogger(XmlUtil.class);
 
     public static List<Map<String, Object>> parseXml(String url) {
         List<Map<String, Object>> lstProduct = new ArrayList<>();

@@ -11,8 +11,8 @@ import java.io.File;
  * send email
  * Created by chenjun on 2017/2/3.
  */
-public class EmailUtils {
-    private static final Logger logger = LoggerFactory.getLogger(EmailUtils.class);
+public class EmailUtil {
+    private static final Logger logger = LoggerFactory.getLogger(EmailUtil.class);
 
     public static void sendEmail(MailBean bean) {
         try {

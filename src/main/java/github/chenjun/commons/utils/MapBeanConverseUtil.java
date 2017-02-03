@@ -19,8 +19,8 @@ import java.util.Set;
 /**
  * Created by chenjun on 2017/2/3.
  */
-public class MapBeanConverseUtils {
-    private static final Logger logger = LoggerFactory.getLogger(MapBeanConverseUtils.class);
+public class MapBeanConverseUtil {
+    private static final Logger logger = LoggerFactory.getLogger(MapBeanConverseUtil.class);
 
     public static <T> T mapToBean(Map<String, Object> map, Class<T> clazz) {
         T bean = null;
